@@ -1,0 +1,28 @@
+#title {
+   text-align: center;
+   color: black;
+   font-style: inherit;
+   font-family: "Tangerine", serif;
+   font-size: 3rem;
+   font-weight:50%px ;
+}
+
+#subtitle {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.portrait-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  text-align: center;
+}
+
+#main-text {
+  text-align: center;
+}
+#tribute-link {
+  text-align: center;
+}
