@@ -1,28 +1,103 @@
-#title {
+html {
+  /* setting base font of 10px for easier rem calculations
+  Examples: 1rem = 10px, 1.5rem = 15px*/
+  font-size: 10px
+}
+
+body {
+  /* native font stack
+  https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  font-family: -apple-system, BlinkMackSystemFont, "Segoe UI", "Roboto",
+  "Helvetica Neue", Aria;, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+
+#main {
+  margin: 30px 30px;
+  padding: 15px;
+  background: #eee;
+}
+
+@media (max-width: 460px) {
+  #main {
+    margin: 30px 30px;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+#autobiography {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* #title {
    text-align: center;
    color: black;
    font-style: inherit;
    font-family: "Tangerine", serif;
    font-size: 3rem;
    font-weight:50%px ;
+   background-color: lightgrey;
 }
 
 #subtitle {
   text-align: center;
   font-size: 2rem;
-}
+  background-color: lightgrey;
+} */
 
-.portrait-image {
+/* .portrait-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 10%;
   text-align: center;
+  background-color: white;
 }
 
 #main-text {
   text-align: center;
+  background-color: lightgrey;
 }
 #tribute-link {
   text-align: center;
-}
+} */
