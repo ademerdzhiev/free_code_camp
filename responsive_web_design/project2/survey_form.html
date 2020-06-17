@@ -41,180 +41,179 @@ User Story #16: Inside the form element, I am presented with a button with id="s
     <title> Survey Form </title>
   </head>
   <body>
-    <main class="main">
-      <h1 id="title">
-        Survey Form (Free Code Camp Project #2)
-      </h1>
-      <p id="description">
-        Survey about self-taught programmers and their background in mathematics
-      </p>
-    </main>
-     <form id="survey-form">
-    <div class="form-group">
-      <label id="name-label" for="name">Name</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        class="form-control"
-        placeholder="Enter your name"
-        required
-      />
-    </div>
-            <div class="form-group">
-            <label id="email-label" for="email">
-              Email
-            </label>
+    <div class="container">
+      <main class="main">
+        <h1 id="title">
+          Survey Form (Free Code Camp Project #2)
+        </h1>
+        <p id="description">
+          Survey about self-taught programmers and their background in mathematics
+        </p>
+      </main>
+       <form id="survey-form">
+         <div class="form-group">
+            <label id="name-label" for="name">Name</label>
             <input
-              type="email"
-              name="email"
-              id="email"
+              type="text"
+              name="name"
+              id="name"
               class="form-control"
-              placeholder="Enter your email"
+              placeholder="Enter your name"
               required
             />
-             <br />
-          </div
-          <div class="form-group">
-            <label id="number-label" for="number">Number of math courses you have taken at
-            university
-            </label>
-            <input
-              type="number"
-              name="number"
-              id="number"
-              class="form-control"
-              min="0"
-              max="20"
-              placeholder="Number"
-            />
-          </div>
-          <div class="form-group">
-            <p>
-              Select what best describes your university background.
-            </p>
-            <select id="dropdown" name="background_dropdown" class="form-control" required>
-              <option disabled selected value > Select an option </option>
-              <option value="math">Mathematics</option>
-              <option value="physics">Physics</option>
-              <option value="engneering">Engineering</option>
-              <option value="chemistry">Chemistry</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <p>How essential for your softwear engineering skills are the taken
-              mathematics classes at the university?
-            </p>
-            <label>
-              <input
-                name="math-essentiality"
-                value="absolutely-necessary"
-                class="radio-btn"
-                type="radio"
-                checked
-              />
-              Absolutely essential and life saving!
-            </label>
-            <label>
-              <input
-                name="math-essentiality"
-                value="not-so-important"
-                class="radio-btn"
-                type="radio"
-              />
-              Not so important.
-            </label>
-            <label>
-              <input
-                name="math-essentiality"
-                value="time-waste"
-                class="radio-btn"
-                type="radio"
-              />
-              Absolute waste of time.
-            </label>
-          </div>
-          <div class="form-group">
-            <p>Which part of mathematics was most pleasent and valuable to study?</p>
-            <label>
-              <input
-                name="fav-math"
-                value="math-analysis"
-                class="checkbox-btn"
-                type="checkbox"
-              />
-              Mathematical Analysis
-            </label>
-            <label>
-              <input
-                name="fav-math"
-                value="comlex-analysis"
-                class="checkbox-btn"
-                type="checkbox"
-              />
-              Complex Analysis
-            </label>
-            <label>
-              <input
-                name="fav-math"
-                value="lin-alg"
-                class="checkbox-btn"
-                type="checkbox"
-              />
-              Linear Algebra
-            </label>
-            <label>
-              <input
-                name="fav-math"
-                value="analytical-geometry"
-                class="checkbox-btn"
-                type="checkbox"
-              />
-              Analytical Geometry
-            </label>
-            <label>
-              <input
-                name="fav-math"
-                value="dif-eq"
-                class="checkbox-btn"
-                type="checkbox"
-              />
-              Differential Equations
-            </label>
-            <label>
-              <input
-                name="fav-math"
-                value="prob-stat"
-                class="checkbox-btn"
-                type="checkbox"
-              />
-              Probability Theory and Mathematical Statistics
-            </label>
-            <label>
-              <input
-                name="fav-math"
-                value="other"
-                class="checkbox-btn"
-                type="checkbox"
-              />
-              Other
-            </label>
-          </div>
-          <div class="form-group">
-            <p>Shall you have some more commets, please enter them below.</p>
-            <textarea
-            id="comments"
-            name="input-textarea"
-            class="input-textarea"
-            placeholder="Enter your comments here...">
-            </textarea>
-            </div>
-              <div class="form-group">
-            <button type="submit" id="submit" class="submit-button">Submit
-            </button>
-          </div>
         </div>
-      </form>
+        <div class="form-group">
+          <label id="email-label" for="email">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+            <div class="form-group">
+              <label id="number-label" for="number">
+                Number of math courses
+              </label>
+              <input
+                type="number"
+                name="number"
+                id="number"
+                class="form-control"
+                min="0"
+                max="20"
+                placeholder="Number"
+              />
+            </div>
+            <div class="form-group">
+              <p>
+                Select what best describes your university background.
+              </p>
+              <select id="dropdown" name="background_dropdown" class="form-control" required>
+                <option disabled selected value > Select an option </option>
+                <option value="math">Mathematics</option>
+                <option value="physics">Physics</option>
+                <option value="engneering">Engineering</option>
+                <option value="chemistry">Chemistry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p>How essential for your softwear engineering skills are the taken
+                mathematics classes at university?
+              </p>
+              <label>
+                <input
+                  name="math-essentiality"
+                  value="absolutely-necessary"
+                  class="radio-btn"
+                  type="radio"
+                  checked
+                />
+                Absolutely essential and life saving!
+              </label>
+              <label>
+                <input
+                  name="math-essentiality"
+                  value="not-so-important"
+                  class="radio-btn"
+                  type="radio"
+                />
+                Not so important.
+              </label>
+              <label>
+                <input
+                  name="math-essentiality"
+                  value="time-waste"
+                  class="radio-btn"
+                  type="radio"
+                />
+                Absolute waste of time.
+              </label>
+            </div>
+            <div class="form-group">
+              <p>Which part of mathematics was most pleasent and valuable to study?</p>
+              <label>
+                <input
+                  name="fav-math"
+                  value="math-analysis"
+                  class="checkbox-btn"
+                  type="checkbox"
+                />
+                Mathematical Analysis
+              </label>
+              <label>
+                <input
+                  name="fav-math"
+                  value="comlex-analysis"
+                  class="checkbox-btn"
+                  type="checkbox"
+                />
+                Complex Analysis
+              </label>
+              <label>
+                <input
+                  name="fav-math"
+                  value="lin-alg"
+                  class="checkbox-btn"
+                  type="checkbox"
+                />
+                Linear Algebra
+              </label>
+              <label>
+                <input
+                  name="fav-math"
+                  value="analytical-geometry"
+                  class="checkbox-btn"
+                  type="checkbox"
+                />
+                Analytical Geometry
+              </label>
+              <label>
+                <input
+                  name="fav-math"
+                  value="dif-eq"
+                  class="checkbox-btn"
+                  type="checkbox"
+                />
+                Differential Equations
+              </label>
+              <label>
+                <input
+                  name="fav-math"
+                  value="prob-stat"
+                  class="checkbox-btn"
+                  type="checkbox"
+                />
+                Probability Theory and Mathematical Statistics
+              </label>
+              <label>
+                <input
+                  name="fav-math"
+                  value="other"
+                  class="checkbox-btn"
+                  type="checkbox"
+                />
+                Other
+              </label>
+            </div>
+            <div class="form-group">
+              <p>Shall you have some more commets, please enter them below.</p>
+              <textarea
+              id="comments"
+              name="input-textarea"
+              class="input-textarea"
+              placeholder="Enter your comments here...">
+              </textarea>
+              </div>
+                <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">Submit
+              </button>
+            </div>
+        </form>
     </div>
   </body>
 </html>

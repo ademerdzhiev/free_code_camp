@@ -96,7 +96,7 @@ button {
   }
 }
 
-.header {
+.main {
   padding: 0 0.625rem;
   margin-bottom: 1.875rem;
 }
@@ -105,12 +105,6 @@ button {
   font-style: italic;
   font-weight: 200;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-
-.clue {
-  margin-left: 0.25rem;
-  font-size: 0.9rem;
-  color: #e4e4e4;
 }
 
 .text-center {
@@ -155,8 +149,8 @@ form {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.input-radio,
-.input-checkbox {
+.radio-btn,
+.checkbox-btn {
   display: inline-block;
   margin-right: 0.625rem;
   min-height: 1.25rem;
